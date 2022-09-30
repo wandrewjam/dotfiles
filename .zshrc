@@ -63,7 +63,7 @@ ZSH_THEME="apple"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=~/.dotfiles/zsh/
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -75,6 +75,9 @@ plugins=(git colored-man-pages zsh-autosuggestions vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+# Set environment variables for vi-mode plugin
+VI_MODE_SET_CURSOR=true
 
 # Autocomplete for tldr pages
 source ~/.tldr.complete
