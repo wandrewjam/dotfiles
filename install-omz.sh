@@ -1,6 +1,6 @@
-#! /bin/sh
+#!/bin/sh
 
-if [ -f "$HOME/.oh-my-zsh"] 
+if [ -f "$HOME/.oh-my-zsh" ] 
 then
     omz update
 else

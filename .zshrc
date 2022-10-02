@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/anwats/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -80,7 +80,7 @@ source $ZSH/oh-my-zsh.sh
 VI_MODE_SET_CURSOR=true
 
 # Autocomplete for tldr pages
-source ~/.tldr.complete
+if [ -f "$HOME/.tldr.complete" ]; then source ~/.tldr.complete; fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
