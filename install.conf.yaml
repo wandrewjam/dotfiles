@@ -7,4 +7,7 @@
     ~/.vimrc: .vimrc
     ~/.vim: .vim
     ~/.emacs.d: .emacs.d
-    
+ 
+- shell:
+    - ./install-omz.sh
+
