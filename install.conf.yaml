@@ -6,7 +6,9 @@
         relink: true
 
 - link:
-    ~/.zshrc: .zshrc
+    ~/.zshrc:
+        force: true
+        path: .zshrc
     ~/.vimrc: .vimrc
     ~/.vim: .vim
     # ~/.emacs.d: .emacs.d
