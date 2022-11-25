@@ -11,4 +11,5 @@
         path: .zshrc
     ~/.vimrc: .vimrc
     ~/.vim: .vim
+    ~/.gitignore_global: .gitignore_global
     # ~/.emacs.d: .emacs.d
