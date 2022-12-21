@@ -1,0 +1,9 @@
+[user]
+	name = Andrew Watson
+	email = wandrewjam@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = /Users/anwats/.gitignore_global
+[include]
+	path = /Users/anwats/.gitconfig_local

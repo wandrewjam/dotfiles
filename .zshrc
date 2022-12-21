@@ -121,3 +121,7 @@ unset __conda_setup
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# If a local .zshrc file exists, override what is set here
+if [ -f ~/.zshrc_local ]; then
+    source ~/.zshrc_local
+fi

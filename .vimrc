@@ -96,3 +96,8 @@ packloadall
 " All messages and errors will be ignored.
 silent! helptags ALL
 
+" Load customizations from .vimrc_local, if it exists
+let $LOCALFILE=expand("~/.vimrc_local")
+if filereadable($LOCALFILE)
+    source $LOCALFILE
+endif
