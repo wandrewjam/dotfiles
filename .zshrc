@@ -70,7 +70,7 @@ ZSH_CUSTOM=~/.dotfiles/zsh/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages zsh-autosuggestions vi-mode)
+plugins=(git colored-man-pages zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,21 +81,6 @@ VI_MODE_SET_CURSOR=true
 
 # Autocomplete for tldr pages
 if [ -f "$HOME/.tldr.complete" ]; then source ~/.tldr.complete; fi
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
